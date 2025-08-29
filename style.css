@@ -1,0 +1,83 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Flexbox for Navigation */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Grid for Main Layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.content {
+    background: #f4f4f4;
+    padding: 1rem;
+}
+
+.sidebar {
+    background: #ddd;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
